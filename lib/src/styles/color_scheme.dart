@@ -3,7 +3,7 @@ import 'package:ticket_app/src/styles/colors.dart';
 
 class AppColorSchemes {
   static const darkColorScheme = ColorScheme.dark(
-    surface: AppColors.black,
+    surface: AppColors.grey2,
     onSurface: AppColors.white,
     // surfaceContainerHighest: AppColors.white,
   );
