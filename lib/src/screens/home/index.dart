@@ -11,16 +11,17 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      children: const [
-        SizedBox(height: 28.0),
-        HomeScreenStart(),
-        SizedBox(height: 36.0),
-        HomeScreenSearchCard(),
-        SizedBox(height: 32.0),
+      children: [
+        const SizedBox(height: 28.0),
+        const HomeScreenStart(),
+        const SizedBox(height: 36.0),
+        const HomeScreenSearchCard(),
+        const SizedBox(height: 32.0),
         ContentSection(
           name: 'Музыкально отлететь',
           buttonText: 'Показать все места',
-          child: Placeholder(fallbackHeight: 220.0),
+          buttonOnTap: () {},
+          child: const Placeholder(fallbackHeight: 220.0),
         )
       ],
     );
