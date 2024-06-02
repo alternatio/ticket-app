@@ -22,6 +22,10 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     List<Widget> screens = [
       const HomeScreen(),
+      const Placeholder(),
+      const Placeholder(),
+      const Placeholder(),
+      const Placeholder(),
     ];
 
     List<BottomNavigationBarItem> bottomNavigationBarItems = const [
@@ -55,6 +59,7 @@ class _MainScreenState extends State<MainScreen> {
         children: [
           const Divider(height: 1.0, color: Color(0xFF1D1E20)),
           BottomNavigationBar(
+            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             selectedItemColor: const Color(0xFF2261BC),
             type: BottomNavigationBarType.fixed,
             unselectedFontSize: 10.0,
