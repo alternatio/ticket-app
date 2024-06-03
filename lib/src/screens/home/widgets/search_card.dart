@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_app/src/screens/home/widgets/search_modal.dart';
 import 'package:ticket_app/src/styles/colors.dart';
 import 'package:ticket_app/src/styles/fonts.dart';
 
@@ -16,10 +17,7 @@ class HomeScreenSearchCard extends StatelessWidget {
           useSafeArea: true,
           showDragHandle: true,
           builder: (BuildContext context) {
-            return const SizedBox(
-              width: double.infinity,
-              child: Column(children: [Text('data')]),
-            );
+            return const HomeScreenSearchModal();
           },
         );
       },

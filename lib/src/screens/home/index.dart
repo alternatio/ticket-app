@@ -22,7 +22,15 @@ class HomeScreen extends StatelessWidget {
           buttonText: 'Показать все места',
           buttonOnTap: () {},
           child: const Placeholder(fallbackHeight: 220.0),
-        )
+        ),
+        const SizedBox(height: 32.0),
+        ContentSection(
+          name: 'Ваш первый раз',
+          buttonText: 'Показать все места',
+          buttonOnTap: () {},
+          child: const Placeholder(fallbackHeight: 220.0),
+        ),
+        const SizedBox(height: 32.0),
       ],
     );
   }

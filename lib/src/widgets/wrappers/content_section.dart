@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_app/src/styles/fonts.dart';
+import 'package:ticket_app/src/widgets/buttons/common_button.dart';
 
 class ContentSection extends StatelessWidget {
   const ContentSection({
@@ -17,24 +18,15 @@ class ContentSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Text(name, style: AppFonts.title1),
       const SizedBox(height: 25.0),
       child,
       const SizedBox(height: 16.0),
       if (buttonText != null)
-        Row(
-          children: [
-            Expanded(
-              child: ElevatedButton(
-                onPressed: buttonOnTap,
-                child: Text(
-                  buttonText!,
-                  style: AppFonts.buttonText,
-                ),
-              ),
-            ),
-          ],
+        CommonButton(
+          text: 'Показать все места',
+          onPressed: () {},
         ),
     ]);
   }
